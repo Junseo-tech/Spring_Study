@@ -39,7 +39,6 @@ class MemberServiceIntegrationTest {
         member.setName("hello");
 
         //when
-
         Long saveId = memberService.join(member);
 
 
