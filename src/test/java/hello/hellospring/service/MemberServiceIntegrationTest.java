@@ -15,21 +15,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class MemberServiceIntegrationTest {
 
-    @Autowired
-    MemberService memberService;
+    @Autowired MemberService memberService;
     @Autowired MemberRepository memberRepository;
-
-    /** //@BeforeEach
-    public void beforeEach() {
-        memberRepository = new MemoryMemberRepository();
-        memberService = new MemberService(memberRepository);
-    } **/
-
-
-   /** // @AfterEach
-    public void afterEach() {
-        memberRepository.clearStore();
-    } **/
 
     @Test
     void 회원가입() {
@@ -72,11 +59,5 @@ class MemberServiceIntegrationTest {
 
         //then
     }
-    @Test
-    void findMembers() {
-    }
 
-    @Test
-    void findOne() {
-    }
 }
